@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DiabetesSA">
         <activity
+            android:name=".Tips_and_Tricks"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Reccomendations"
+            android:exported="false" />
+        <activity
             android:name=".register_fragment"
             android:exported="false">
             <meta-data

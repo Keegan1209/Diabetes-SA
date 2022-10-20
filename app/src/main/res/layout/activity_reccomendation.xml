@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reccomendation1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_heading"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECOMMENDATIONS"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="@drawable/bg_heading">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:text="Blood Sugar levels"
+           android:paddingTop="30dp"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:textAlignment="center"
+           tools:layout_editor_absoluteX="0dp"
+           tools:layout_editor_absoluteY="91dp">
+
+       </TextView>
+
+
+
+
+
+   </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="15dp"
+            android:text="HIGH"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/currentLevel"
+            android:paddingEnd="10dp"
+            android:layout_width="158dp"
+            android:layout_height="155dp"
+            android:layout_marginEnd="25dp"
+            android:text="90"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/circle"
+            tools:ignore="RtlSymmetry">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="158dp"
+            android:layout_height="155dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="90"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <TextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="95dp"
+
+        android:text="current"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="65dp"
+        android:text="goal"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+
+            android:id="@+id/add_recommendation_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:gravity="left"
+            android:hint="RECOMMENDATIONS"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:maxLines="10"
+            android:paddingStart="10dp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnCreateLog"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="CREATE NEW LOG">
+
+    </Button>
+
+</LinearLayout>
