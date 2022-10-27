@@ -190,7 +190,9 @@
                     android:layout_marginRight="100dp"
                     android:hint="Blood Pressure Reading"
                     android:inputType="numberDecimal"
-                    android:minHeight="48dp"></EditText>
+                    android:minHeight="48dp">
+
+                </EditText>
                 <TextView
                     android:layout_width="wrap_content"
                     android:text="Body Height"

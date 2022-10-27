@@ -28,24 +28,34 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:gravity="center_vertical"
-        android:layout_height="50dp">
+        android:layout_height="79dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lets keep track!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="523dp"
         android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Time recorded"
-        android:id="@+id/txtTime"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Time recorded"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtTime"
@@ -55,15 +65,16 @@
             android:layout_marginRight="100dp"
             android:hint="E.g. 16:30"
             android:inputType="time"
+
             android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Blood Sugar"
-        android:id="@+id/txtBloodSugar"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+
+        <TextView
+            android:id="@+id/txtBloodSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Blood Sugar (mg/dL)"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtBloodSugar"
@@ -71,35 +82,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
-            android:hint="Blood Sugar Reading"
+            android:hint="E.g. 126"
             android:inputType="numberDecimal"
             android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Glucose"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/txtGlucose"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
 
-        <EditText
-            android:id="@+id/edtGlucose"
-            android:layout_width="328dp"
+        <TextView
+            android:id="@+id/txtBloodPressure"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="100dp"
-            android:hint="Glucose Reading"
-            android:inputType="numberDecimal"
-            android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Blood Pressure"
-        android:id="@+id/txtBloodPressure"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+            android:text="Blood Pressure (mmHg)"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtBloodPressure"
@@ -107,17 +100,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
-            android:hint="Blood Pressure Reading"
+            android:hint="E.g. 120/80"
             android:inputType="numberDecimal"
             android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Medication"
-        android:id="@+id/txtMedication"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+
+        <TextView
+            android:id="@+id/txtMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Medication"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtMedication"
@@ -125,17 +118,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
-            android:hint="Medication"
+            android:hint="E.g. Rapid-acting insulin"
             android:inputType="text"
             android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Food Types"
-        android:id="@+id/txtFood"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+
+        <TextView
+            android:id="@+id/txtFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Food Types"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtFood"
@@ -143,17 +136,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
-            android:hint="Food Types"
+            android:hint="E.g. orange, mince, green beans "
             android:inputType="text"
             android:minHeight="48dp"></EditText>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Activity"
-        android:id="@+id/txtActivity"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content">
-    </TextView>
+
+        <TextView
+            android:id="@+id/txtActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Activity"
+            android:textStyle="bold"></TextView>
 
         <EditText
             android:id="@+id/edtActivity"
@@ -161,19 +154,19 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="100dp"
-            android:hint="Activity"
+            android:hint="E.g. Running, swimming, working out"
             android:inputType="text"
             android:minHeight="48dp">
 
         </EditText>
 
         <Button
-            android:layout_gravity="center_horizontal"
             android:id="@+id/btnCreateLog"
-            android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
             android:text="CREATE LOG">
 
         </Button>
